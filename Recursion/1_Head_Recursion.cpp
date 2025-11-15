@@ -1,6 +1,6 @@
 #include <iostream> 
 
-// "Head Recursion" : when first thing the function do is calling itself
+// "Head Recursion" : when first statement in the function is calling itself
 void func(int n)
 {
     if(n>0)
