@@ -1,6 +1,6 @@
 #include <iostream>
 
-
+// "Indirect Recursion" : a cycle of functions calling eachother
 void funcA(int n);
 void funcB(int n);
 
