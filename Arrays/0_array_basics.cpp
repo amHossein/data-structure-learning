@@ -51,14 +51,14 @@ int main()
     printf("%d \n", NoLimit[0]);
     printf("%d \n", 0[NoLimit]);
     printf("%d \n", *(NoLimit+0));
-    // NoLimit[0] == 0[NoLimit] = (NoLimit+0)
+    // NoLimit[0] == 0[NoLimit] = *(NoLimit+0)
     printf("%d \n", static_cast<int>(std::size(NoLimit)));
     printf("%d \n", static_cast<int>((sizeof(NoLimit) / sizeof(NoLimit[0])))); 
     // std::size(NoLimit) == (sizeof(NoLimit) / sizeof(NoLimit[0])
 
     int lenOfNoLimit = std::size(NoLimit);
     for(int i=0; i<lenOfNoLimit ; i++){
-        printf("%d : %d\n",&i[NoLimit],NoLimit[i]);
+        printf("%d : %p\n",i[NoLimit],&NoLimit[i]); // %p for pointer value
     }
     
     
