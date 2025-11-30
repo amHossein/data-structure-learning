@@ -58,7 +58,7 @@ int main()
 
     int lenOfNoLimit = std::size(NoLimit);
     for(int i=0; i<lenOfNoLimit ; i++){
-        printf("%d=%d  ",i[NoLimit],NoLimit[i]);
+        printf("%d : %d\n",&i[NoLimit],NoLimit[i]);
     }
     
     
